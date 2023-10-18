@@ -1,0 +1,44 @@
+[
+    {
+        "name":"Nike",
+        "brand_img":"",
+        "adds":[
+            "", "","", ""
+        ]
+    },
+    {
+        "name":"Adidas",
+        "brand_img":"",
+        "adds":[
+            "", "","", ""
+        ]
+    },
+    {
+        "name":"Gucci",
+        "brand_img":"",
+        "adds":[
+            "", "","", ""
+        ]
+    },
+    {
+        "name":"H&M",
+        "brand_img":"",
+        "adds":[
+            "", "","", ""
+        ]
+    },
+    {
+        "name":"Levi's",
+        "brand_img":"",
+        "adds":[
+            "", "","", ""
+        ]
+    },
+    {
+        "name":"Zara",
+        "brand_img":"",
+        "adds":[
+            "", "","", ""
+        ]
+    }
+]
