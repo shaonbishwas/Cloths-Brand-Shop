@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [products, setProducts] = useState();
   useEffect(() => {
-    fetch(
-      "https://fashion-and-apparel-server-a4t92rbl6-shaon-bishwas-projects.vercel.app/products"
-    )
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
   return (
     <>
-      <h1>Vite + React</h1>
+    <Navbar></Navbar>
       {products?.map((p) => (
         <div key={p._id}>
           <h1>{p.name}</h1>
@@ -21,6 +21,7 @@ function App() {
           <h1>{p._id}</h1>
         </div>
       ))}
+      <Outlet></Outlet>
       <Footer></Footer>
     </>
   );
