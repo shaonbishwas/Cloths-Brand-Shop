@@ -1,44 +1,38 @@
 [
-    {
-        "name":"Nike",
-        "brand_img":"",
-        "adds":[
-            "", "","", ""
-        ]
-    },
-    {
-        "name":"Adidas",
-        "brand_img":"",
-        "adds":[
-            "", "","", ""
-        ]
-    },
-    {
-        "name":"Gucci",
-        "brand_img":"",
-        "adds":[
-            "", "","", ""
-        ]
-    },
-    {
-        "name":"H&M",
-        "brand_img":"",
-        "adds":[
-            "", "","", ""
-        ]
-    },
-    {
-        "name":"Levi's",
-        "brand_img":"",
-        "adds":[
-            "", "","", ""
-        ]
-    },
-    {
-        "name":"Zara",
-        "brand_img":"",
-        "adds":[
-            "", "","", ""
-        ]
-    }
+  {
+    "id": 1,
+    "name": "Nike",
+    "brand_img": "https://i.ibb.co/y5gQXDX/nike-sportswear-4b7ead9b-59cb-454c-81c2-8c741acf0968-1200x1200.jpg",
+    "adds": ["", "", "", ""]
+  },
+  {
+    "id": 2,
+    "name": "Gucci",
+    "brand_img": "https://i.ibb.co/FDz08hm/gucci.webp",
+    "adds": ["", "", "", ""]
+  },
+  {
+    "id": 3,
+    "name": "H&M",
+    "brand_img": "https://i.ibb.co/VHjS7Gr/960x0.webp",
+    "adds": ["", "", "", ""]
+  },
+  {
+    "id": 4,
+    "name": "Levi's",
+    "brand_img": "https://i.ibb.co/VJkCj1b/unnamed.png",
+    "adds": ["", "", "", ""]
+  },
+  {
+    "id": 5,
+    "name": "Adidas",
+    "brand_img": "https://i.ibb.co/K2NQ8Xn/Adidas-logo.webp",
+    "adds": ["", "", "", ""]
+  },
+  {
+    "id": 6,
+    "name": "Zara",
+    "brand_img": "https://i.ibb.co/V9GwPN9/Adz7-KPwzviy-Y4-Ig-V.jpg",
+    "adds": ["", "", "", ""]
+  }
 ]

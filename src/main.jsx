@@ -9,6 +9,7 @@ import AddProducts from './Pages/AddProducts/AddProducts.jsx'
 import MyCart from './Pages/MyCart/MyCart.jsx'
 import Register from './Pages/Register/Register.jsx'
 import Login from './Pages/LogIn/LogIn.jsx'
+import BrandProducts from './Pages/BrandProducts/BrandProducts.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: ()=>fetch('/brand.json')
       },
       {
         path:'/addproducts',
@@ -34,6 +36,11 @@ const router = createBrowserRouter([
       {
         path:'/register',
         element: <Register></Register>
+      },
+      {
+        path: '/brandproducts/:name',
+        element:<BrandProducts></BrandProducts>,
+        loader:()=>fetch('/brand.json')
       }
     ]
   }

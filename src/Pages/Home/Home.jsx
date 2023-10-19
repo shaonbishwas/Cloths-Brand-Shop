@@ -1,9 +1,16 @@
+import { useLoaderData } from "react-router-dom";
+import Brand from "../../components/Brand/Brand";
 
 
 const Home = () => {
+    const brands = useLoaderData()
     return (
         <div>
-            <h1>this is Home</h1>
+            <div>
+            {
+                brands?.map((brand)=><Brand key={brand.id} brand={brand}></Brand>)
+            }
+            </div>
         </div>
     );
 };
