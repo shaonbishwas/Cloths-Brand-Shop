@@ -1,8 +1,12 @@
-# React + Vite
+# Fashion and Apparel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-[]
 
-Currently, two official plugins are available:
+# some feature of this web site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- if you don't loged in you can not see product details.
+- in add product page you can add new product into the database.
+- In product detail you can add a product in cart section.
+- In my cart page you can see all of your products that you added to your cart.
+- If you need to delete any product from your cart you can delete it by click the delete button.
+- If you loged in then you can see your email and profile image in navbar.
