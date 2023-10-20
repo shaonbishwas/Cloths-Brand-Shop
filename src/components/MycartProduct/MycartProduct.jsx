@@ -2,9 +2,12 @@ import PropTypes from "prop-types";
 
 const MycartProduct = ({ product }) => {
   const handleDelete = () => {
-    fetch(`http://localhost:5000/delete/${product._id}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/delete/${product._id}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
@@ -19,7 +22,12 @@ const MycartProduct = ({ product }) => {
         <h1 className="font-bold">{product.type}</h1>
         <h1 className="font-semibold">${product.price}</h1>
         <h1>{product.rating} / 5</h1>
-        <button onClick={handleDelete} className="mt-1 bg-red-600 text-white border-none py-2 px-5 rounded-xl">Delete</button>
+        <button
+          onClick={handleDelete}
+          className="mt-1 bg-red-600 text-white border-none py-2 px-5 rounded-xl"
+        >
+          Delete
+        </button>
       </div>
     </div>
   );

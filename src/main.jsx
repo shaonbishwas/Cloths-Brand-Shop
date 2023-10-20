@@ -1,71 +1,103 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import AuthProvider from './authProvider/AuthProvider.jsx'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './Pages/Home/Home.jsx'
-import AddProducts from './Pages/AddProducts/AddProducts.jsx'
-import MyCart from './Pages/MyCart/MyCart.jsx'
-import Register from './Pages/Register/Register.jsx'
-import Login from './Pages/LogIn/LogIn.jsx'
-import BrandProducts from './Pages/BrandProducts/BrandProducts.jsx'
-import ProductDetails from './Pages/productDetails/ProductDetails.jsx'
-import Update from './Pages/Update/Update.jsx'
-import PrivateRoute from './PrivateRoute/PrivateRoute.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import AuthProvider from "./authProvider/AuthProvider.jsx";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./Pages/Home/Home.jsx";
+import AddProducts from "./Pages/AddProducts/AddProducts.jsx";
+import MyCart from "./Pages/MyCart/MyCart.jsx";
+import Register from "./Pages/Register/Register.jsx";
+import Login from "./Pages/LogIn/LogIn.jsx";
+import BrandProducts from "./Pages/BrandProducts/BrandProducts.jsx";
+import ProductDetails from "./Pages/productDetails/ProductDetails.jsx";
+import Update from "./Pages/Update/Update.jsx";
+import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
+import ErrorElement from "./components/ErrorElement/ErrorElement.jsx";
 
 const router = createBrowserRouter([
   {
-    path:'/',
+    path: "/",
     element: <App></App>,
-    children:[
+    errorElement:<ErrorElement></ErrorElement>,
+    children: [
       {
-        path:'/',
+        path: "/",
         element: <Home></Home>,
-        loader: ()=>fetch('/brand.json')
+        loader: () => fetch("/brand.json"),
       },
       {
-        path:'/addproducts',
-        element:<PrivateRoute><AddProducts></AddProducts></PrivateRoute>
+        path: "/addproducts",
+        element: (
+          <PrivateRoute>
+            <AddProducts></AddProducts>
+          </PrivateRoute>
+        ),
+        errorElement:<ErrorElement></ErrorElement>
       },
       {
-        path:'/mycart',
-        element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader:()=> fetch("http://localhost:5000/mycart")
+        path: "/mycart",
+        element: (
+          <PrivateRoute>
+            <MyCart></MyCart>
+          </PrivateRoute>
+        ),
+        errorElement:<ErrorElement></ErrorElement>,
+        loader: () =>
+          fetch(
+            "https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/mycart"
+          ),
       },
       {
-        path:"/login",
-        element: <Login></Login>
+        path: "/login",
+        element: <Login></Login>,
+        errorElement:<ErrorElement></ErrorElement>
       },
       {
-        path:'/register',
-        element: <Register></Register>
+        path: "/register",
+        element: <Register></Register>,
+        errorElement:<ErrorElement></ErrorElement>
       },
       {
-        path: '/brandproducts/:name',
-        element:<BrandProducts></BrandProducts>,
-        loader:()=>fetch('/brand.json')
+        path: "/brandproducts/:name",
+        element: <BrandProducts></BrandProducts>,
+        errorElement:<ErrorElement></ErrorElement>,
+        loader: () => fetch("/brand.json"),
       },
       {
-        path:'/productdetails/:id',
-        element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/productdetails/${params.id}`)
+        path: "/productdetails/:id",
+        element: (
+          <PrivateRoute>
+            <ProductDetails></ProductDetails>
+          </PrivateRoute>
+        ),
+        errorElement:<ErrorElement></ErrorElement>,
+        loader: ({ params }) =>
+          fetch(
+            `https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/productdetails/${params.id}`
+          ),
       },
       {
-        path:'/update/:id',
-        element:<PrivateRoute><Update></Update></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/productdetails/${params.id}`)
-      }
-    ]
-  }
-])
+        path: "/update/:id",
+        element: (
+          <PrivateRoute>
+            <Update></Update>
+          </PrivateRoute>
+        ),
+        errorElement:<ErrorElement></ErrorElement>,
+        loader: ({ params }) =>
+          fetch(
+            `https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/productdetails/${params.id}`
+          ),
+      },
+    ],
+  },
+]);
 
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AuthProvider>
       <RouterProvider router={router}></RouterProvider>
     </AuthProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
