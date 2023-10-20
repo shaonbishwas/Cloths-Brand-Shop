@@ -1,0 +1,182 @@
+[
+  {
+    "name": "H&M Denim Jacket",
+    "type": "Jacket",
+    "brand": "H&M",
+    "image": "https://i.ibb.co/3CLMZLT/maxresdefault.jpg",
+    "short_description": "Stylish H&M denim jacket, a versatile addition to your wardrobe.",
+    "price": 49.99,
+    "rating": 4.4
+  },
+  {
+    "name": "H&M Printed T-Shirt",
+    "type": "T-Shirt",
+    "brand": "H&M",
+    "image": "https://i.ibb.co/HrnSw3H/2ab43ee88d424f7399e0a62a2abc435a9ea60cdf-xxl-1.jpg",
+    "short_description": "Casual and trendy H&M printed T-shirt for everyday wear.",
+    "price": 12.99,
+    "rating": 4.2
+  },
+  {
+    "name": "H&M Slim Fit Chinos",
+    "type": "Pants",
+    "brand": "H&M",
+    "image": "https://i.ibb.co/J2P8tVJ/998c7e786b4b369ae9dd796e6a99d18b9025b213-xxl-1.jpg",
+    "short_description": "Comfortable and slim-fit chinos from H&M, ideal for both casual and formal occasions.",
+    "price": 29.99,
+    "rating": 4.5
+  },
+  {
+    "name": "H&M Basic Sneakers",
+    "type": "Sneakers",
+    "brand": "H&M",
+    "image": "https://i.ibb.co/hX92fMD/hmgoepprod.jpg",
+    "short_description": "Affordable and stylish basic sneakers from H&M's footwear collection.",
+    "price": 24.99,
+    "rating": 4.3
+  },
+  {
+    "name": "Gucci Ace Sneakers",
+    "type": "Sneakers",
+    "brand": "Gucci",
+    "image": "https://i.ibb.co/94wFLGM/gucci-tiger-air-jordan-13-sneakers-shoes-hot-2022-gifts-for-men-women-ht-1-pmqwi.jpg",
+    "short_description": "Iconic Gucci Ace sneakers with signature bee embroidery.",
+    "price": 690.0,
+    "rating": 4.7
+  },
+  {
+    "name": "Gucci GG Marmont Bag",
+    "type": "Handbag",
+    "brand": "Gucci",
+    "image": "https://i.ibb.co/HCbKqjd/gucci-handbags-under-1000-280052-1558458092086-square-700x0c.jpg",
+    "short_description": "Luxurious GG Marmont leather bag with double G logo detail.",
+    "price": 1980.0,
+    "rating": 4.9
+  },
+  {
+    "name": "Gucci Classic Logo Belt",
+    "type": "Accessories",
+    "brand": "Gucci",
+    "image": "https://i.ibb.co/m49DN26/109723896-Nj-Iw-LTYy-MC1m-Mj-E1-MDM4-Mz-Ew.webp",
+    "short_description": "Elegant Gucci belt with classic interlocking G buckle.",
+    "price": 450.0,
+    "rating": 4.6
+  },
+  {
+    "name": "Gucci Bloom Perfume",
+    "type": "Fragrance",
+    "brand": "Gucci",
+    "image": "https://i.ibb.co/PGp81vd/61e6712bc92ac10689-662.jpg",
+    "short_description": "Gucci Bloom Eau de Parfum, a rich and floral scent.",
+    "price": 120.0,
+    "rating": 4.8
+  },
+  {
+    "name": "Zara Floral Print Dress",
+    "type": "Dress",
+    "brand": "Zara",
+    "image": "https://i.ibb.co/fvsb3J8/7921629080-1-1-1.jpg",
+    "short_description": "A stylish and comfortable floral print dress from Zara's latest collection.",
+    "price": 49.99,
+    "rating": 4.3
+  },
+  {
+    "name": "Zara Slim Fit Button-Up Shirt",
+    "type": "Shirt",
+    "brand": "Zara",
+    "image": "https://i.ibb.co/bHfZbJy/914-Kt8-As-FHL-AC-UY1100.jpg",
+    "short_description": "A versatile and slim-fit button-up shirt that adds a touch of sophistication to your outfit.",
+    "price": 34.99,
+    "rating": 4.5
+  },
+  {
+    "name": "Zara High-Rise Skinny Jeans",
+    "type": "Jeans",
+    "brand": "Zara",
+    "image": "https://i.ibb.co/sCLQjSq/9b8f9c5ffad93f425ac798d29004b634.jpg",
+    "short_description": "Classic high-rise skinny jeans for a modern and trendy look from Zara.",
+    "price": 59.99,
+    "rating": 4.4
+  },
+  {
+    "name": "Zara Faux Leather Tote Bag",
+    "type": "Handbag",
+    "brand": "Zara",
+    "image": "https://i.ibb.co/HTMG4H7/168433714097054f440f5b55f6db7a75f5be2df6cf-thumbnail-720x.jpg",
+    "short_description": "A stylish and spacious faux leather tote bag from Zara's accessory collection.",
+    "price": 44.99,
+    "rating": 4.2
+  },
+  {
+    "name": "Adidas Ultraboost 21",
+    "type": "Sneakers",
+    "brand": "Adidas",
+    "image": "https://i.ibb.co/F0ZwPTT/high-top-adidas-sneakers-on-a-bright-background.jpg",
+    "short_description": "High-performance Adidas sneakers with responsive cushioning.",
+    "price": 179.99,
+    "rating": 4.6
+  },
+  {
+    "name": "Adidas Trefoil Hoodie",
+    "type": "Hoodie",
+    "brand": "Adidas",
+    "image": "https://i.ibb.co/6nryw1Z/clothing-Designed-by-Adidas-style-of-foreign-era.jpg",
+    "short_description": "Comfortable and stylish Adidas hoodie with the classic Trefoil logo.",
+    "price": 54.99,
+    "rating": 4.5
+  },
+  {
+    "name": "Adidas Classic 3-Stripes Backpack",
+    "type": "Backpack",
+    "brand": "Adidas",
+    "image": "https://i.ibb.co/9T18S7n/images.jpg",
+    "short_description": "Classic Adidas backpack with the iconic 3-Stripes design.",
+    "price": 39.99,
+    "rating": 4.4
+  },
+  {
+    "name": "Adidas Tango Glider Football",
+    "type": "Football",
+    "brand": "Adidas",
+    "image": "https://i.ibb.co/BP7qBng/http-static-theiconic-com-au-p-adidas-performance-1970-936267-1.jpg",
+    "short_description": "High-quality Adidas football for practice and games, designed for control and accuracy.",
+    "price": 24.99,
+    "rating": 4.7
+  },
+  {
+    "name": "Nike Air Max 90",
+    "type": "Sneakers",
+    "brand": "Nike",
+    "image": "https://i.ibb.co/7QZRGkq/Post-advertisement-for-a-shoe-product-1.jpg",
+    "short_description": "Classic and iconic Air Max sneakers for everyday comfort.",
+    "price": 129.99,
+    "rating": 4.5
+  },
+  {
+    "name": "Nike Sportswear Hoodie",
+    "type": "Hoodie",
+    "brand": "Nike",
+    "image": "https://i.ibb.co/ZKm1XCC/Augmented-reality-hoodie-activation-futuristic-sci.jpg",
+    "short_description": "Warm and stylish Nike hoodie for all-day comfort and style.",
+    "price": 59.99,
+    "rating": 4.4
+  },
+  {
+    "name": "Nike Elemental Backpack",
+    "type": "Backpack",
+    "brand": "Nike",
+    "image": "https://i.ibb.co/Jnqz1PM/be228095-36ab-469c-bcef-c805c80c8e9a.webp",
+    "short_description": "Durable Nike backpack designed for school, work, or travel.",
+    "price": 49.99,
+    "rating": 4.6
+  },
+  {
+    "name": "Nike Premier Team Football",
+    "type": "Football",
+    "brand": "Nike",
+    "image": "https://i.ibb.co/xLfwXyM/premier-league-nike-3rd-ball-7.jpg",
+    "short_description": "High-quality Nike football for training and matches, designed for control and precision.",
+    "price": 29.99,
+    "rating": 4.7
+  }
+]

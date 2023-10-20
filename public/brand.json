@@ -3,36 +3,66 @@
     "id": 1,
     "name": "Nike",
     "brand_img": "https://i.ibb.co/y5gQXDX/nike-sportswear-4b7ead9b-59cb-454c-81c2-8c741acf0968-1200x1200.jpg",
-    "adds": ["", "", "", ""]
+    "adds": [
+      "https://i.ibb.co/gvzCkjY/1c763cadffdfaee184d922e10a044f0f.jpg",
+      "https://i.ibb.co/58FrkNh/maxresdefault.jpg",
+      "https://i.ibb.co/pdVjVwS/Nike-advertising.jpg",
+      "https://i.ibb.co/4mf60dv/Growth-of-Nike-Advertising.jpg"
+    ]
   },
   {
     "id": 2,
     "name": "Gucci",
     "brand_img": "https://i.ibb.co/FDz08hm/gucci.webp",
-    "adds": ["", "", "", ""]
+    "adds": [
+      "https://i.ibb.co/bgkM1ZF/GU759-GUILTY-2022-YEAR-1-LAYOUTS-DPS-RGB-300dpi-01.webp",
+      "https://i.ibb.co/WBpzpY6/c7ab8f8fc65ff3da60b8917815113e81.jpg",
+      "https://i.ibb.co/VNsx3MW/571395da73150aa8120ad070d9543ea6.jpg",
+      "https://i.ibb.co/qxSXwP3/maxresdefault-2.jpg"
+    ]
   },
   {
     "id": 3,
     "name": "H&M",
     "brand_img": "https://i.ibb.co/VHjS7Gr/960x0.webp",
-    "adds": ["", "", "", ""]
+    "adds": [
+      "https://i.ibb.co/2nhKtzc/7c91b8a09aa4f68c899297e3b0749df4.png",
+      "https://i.ibb.co/7tscG3q/maxresdefault-1.jpg",
+      "https://i.ibb.co/5KsX9y2/maxresdefault.jpg",
+      "https://i.ibb.co/vvGDR5Q/banners-h-m.png"
+    ]
   },
   {
     "id": 4,
     "name": "Levi's",
     "brand_img": "https://i.ibb.co/VJkCj1b/unnamed.png",
-    "adds": ["", "", "", ""]
+    "adds": [
+      "https://i.ibb.co/N3xzVYn/Levis-Buy-Better-Wear-Longer.jpg",
+      "https://i.ibb.co/m8xhD0W/Levi-s-Storefront-48105830541.jpg",
+      "https://i.ibb.co/XpxGBd2/2022217-LEVIS-AD-LOVE-STORY-HERO.jpg",
+      "https://i.ibb.co/Qj3mmNm/20191024-Velvetone-Hero.jpg"
+    ]
   },
   {
     "id": 5,
     "name": "Adidas",
     "brand_img": "https://i.ibb.co/K2NQ8Xn/Adidas-logo.webp",
-    "adds": ["", "", "", ""]
+    "adds": [
+      "https://i.ibb.co/56LtQyP/1-harden-vol3-act-897x505.jpg",
+      "https://i.ibb.co/9wKfGJK/04b166b298bb1f4eee3505c0eb60ff18.jpg",
+      "https://i.ibb.co/cXJYdVv/adidasad1.jpg",
+      "https://i.ibb.co/SBGSQBb/Cea-G-r-H64.jpg"
+    ]
   },
   {
     "id": 6,
     "name": "Zara",
-    "brand_img": "https://i.ibb.co/V9GwPN9/Adz7-KPwzviy-Y4-Ig-V.jpg",
-    "adds": ["", "", "", ""]
+    "brand_img": "https://i.ibb.co/vQgD8W3/channels4-profile.jpg",
+    "adds": [
+      "https://i.ibb.co/M6kN7F0/STR-Header-Blog-Post-Zara-V1-0-1.webp",
+      "https://i.ibb.co/b51swSQ/maxresdefault-1.jpg",
+      "https://i.ibb.co/yghp4Rx/maxresdefault.jpg",
+      "https://i.ibb.co/RDLyzGc/page-1.webp"
+    ]
   }
 ]

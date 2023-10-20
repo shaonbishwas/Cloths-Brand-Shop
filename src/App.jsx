@@ -14,13 +14,6 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-      {products?.map((p) => (
-        <div key={p._id}>
-          <h1>{p.name}</h1>
-          <h1>{p.brand_name}</h1>
-          <h1>{p._id}</h1>
-        </div>
-      ))}
       <Outlet></Outlet>
       <Footer></Footer>
     </>

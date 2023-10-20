@@ -9,7 +9,7 @@ const Brand = ({brand}) => {
     }
     return (
         <div onClick={hadleClick}>
-            <img src={brand.brand_img} alt="" />
+            <img src={brand.brand_img} className="w-full h-full" alt="" />
         </div>
     );
 };
