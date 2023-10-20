@@ -8,7 +8,7 @@ const Brand = ({brand}) => {
         navigate(`/brandproducts/${brand.name}`)
     }
     return (
-        <div onClick={hadleClick}>
+        <div onClick={hadleClick} className="w-[300px]">
             <img src={brand.brand_img} className="w-full h-full" alt="" />
         </div>
     );
