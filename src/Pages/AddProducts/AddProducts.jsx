@@ -1,10 +1,27 @@
 
 
 const AddProducts = () => {
-  const handleSubmit = e=>{
+  const handleSubmit = e =>{
     e.preventDefault()
-    const form = e.target.type.value;
-    console.log(form)
+    const form = e.target;
+    const name = form.name.value
+    const brand = form.brand.value
+    const rating = form.rating.value
+    const image = form.image.value
+    const price = form.price.value
+    const type = form.type.value
+    const short_description = form.short_description.value
+    const addProduct = {name, brand, rating, image, price, type, short_description}
+    console.log(addProduct)
+    fetch('http://localhost:5000/addProduct', {
+      method:"POST",
+      headers:{
+        'content-type' : 'application/json'
+      },
+      body : JSON.stringify(addProduct)
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
   }
     return (
         <div>
@@ -42,7 +59,7 @@ const AddProducts = () => {
                 <input
                   type="text"
                   placeholder="Photo URL"
-                  name="photourl"
+                  name="image"
                   className="loginCart input input-bordered"
                   required
                 />
@@ -87,12 +104,12 @@ const AddProducts = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Description</span>
+                  <span className="label-text">description</span>
                 </label>
                 <textarea
                   type="text"
-                  placeholder="Write Description"
-                  name="description"
+                  placeholder="Write description"
+                  name="short_description"
                   className="loginCart input input-bordered h-32"
                   required
                 />
