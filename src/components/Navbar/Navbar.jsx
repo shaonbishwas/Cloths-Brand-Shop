@@ -81,7 +81,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <h1>MyBrand</h1>
+        <h1 className=" text-xl font-extrabold"><span className="b text-2xl font-extrabold">M</span>y <span className="m text-2xl font-extrabold">B</span>rand</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>

@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { ToastContainer } from "react-toastify";
 import './register.css'
 import { AuthContext } from "../../authProvider/AuthProvider";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 
 const Register = () => {
   const { createUser, notify, setRerror, rerror, setLoading } =
@@ -38,8 +35,6 @@ const Register = () => {
   };
   return (
     <>
-      <Navbar></Navbar>
-      <ToastContainer></ToastContainer>
       <div className="hero min-h-screen bg-base-200 text-white">
         <div className="hero-content flex-col lg:flex-row-reverse lg:w-[30%] ">
           <div className="registerCart card flex-shrink-0 w-full shadow-2xl bg-base-100 h-full">
@@ -96,7 +91,6 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
     </>
   );
 };
