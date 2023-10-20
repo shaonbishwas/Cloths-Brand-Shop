@@ -8,8 +8,8 @@ const Home = () => {
   const brands = useLoaderData();
   return (
     <div>
-      <div className="flex lg:flex-row my-10 ">
-        <div className="w-3/5 flex justify-center items-center text-white">
+      <div className="flex lg:flex-row my-10 flex-col gap-10 lg:gap-0 ">
+        <div className="lg:w-3/5 flex flex-row justify-center items-center text-white">
           <div className="w-[70%] mx-auto space-y-3">
             <h1 className="text-5xl font-extrabold">
               Make Yourself a Brand with us
@@ -24,20 +24,24 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="w-2/5 h-[60vh]">
-          <img className="w-[65%] rounded-full h-full" src={heroImg} alt="" />
+        <div className="lg:w-2/5 h-[60vh] ">
+          <img className="w-[90%] md:w-[70%] mx-auto  lg:w-[65%] rounded-full h-full" src={heroImg} alt="" />
         </div>
       </div>
-      <div className="text-white flex justify-center my-10 text-5xl font-bold">
-        <h1>Our Trusted Brands</h1>
+
+
+
+
+      <div className="text-white text-center flex justify-center my-10 text-5xl font-bold">
+        <h1 className="">Our Trusted Brands</h1>
       </div>
-      <div className="w-4/5 mx-auto grid grid-cols-3 gap-10">
+      <div className="w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10">
         {brands?.map((brand) => (
           <Brand key={brand.id} brand={brand}></Brand>
         ))}
       </div>
       <div className="text-center text-white mt-20 w-4/5 mx-auto leading-loose py-10">
-        <h1 className="text-2xl font-bold space-y-5">
+        <h1 className="text-4xl font-bold space-y-5">
           CREATE YOUR OWN BRAND
         </h1>
         <p>

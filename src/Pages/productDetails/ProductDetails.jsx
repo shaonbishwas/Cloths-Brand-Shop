@@ -29,9 +29,9 @@ const ProductDetails = () => {
   return (
     <>
       <ToastContainer></ToastContainer>
-      <div className="flex lg:flex-row mt-10 w-4/5 text-white mx-auto gap-5 h-[80vh]">
-        <div className="w-1/2">
-          <img src={image} className="h-[90%] mx-auto w-full" alt="" />
+      <div className="flex flex-col lg:flex-row my-10 w-4/5 text-white mx-auto gap-5 min-h-screen">
+        <div className="lg:w-1/2 h-[500px]">
+          <img src={image} className=" h-full mx-auto w-full" alt="" />
         </div>
         <div className="space-y-2 pt-10">
           <h1 className="text-white text-6xl font-bold">{name}</h1>

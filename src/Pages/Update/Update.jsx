@@ -26,13 +26,13 @@ const Update = () => {
       .then((data) => console.log(data));
   };
   return (
-    <div className="h-[80vh] flex justify-center items-center text-gray-400  w-[70%] mx-auto">
+    <div className=" flex justify-center items-center text-gray-400 md:w-[80%] my-10  lg:w-[70%] mx-auto">
       <form
         className="card-body  mx-auto   flex flex-col gap-10"
         onSubmit={handleSubmit}
       >
-        <div className="flex lg:flex-row gap-5">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="lg:w-1/2">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>
@@ -73,7 +73,7 @@ const Update = () => {
               />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Price</span>

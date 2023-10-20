@@ -34,9 +34,9 @@ const AddProducts = () => {
   };
   return (
     <div>
-      <form className="card-body  w-4/5 mx-auto" onSubmit={handleSubmit}>
-        <div className="flex lg:flex-row gap-5">
-          <div className="w-1/2">
+      <form className="card-body my-10 w-4/5 mx-auto" onSubmit={handleSubmit}>
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="lg:w-1/2">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>
@@ -86,7 +86,7 @@ const AddProducts = () => {
               />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Rating</span>

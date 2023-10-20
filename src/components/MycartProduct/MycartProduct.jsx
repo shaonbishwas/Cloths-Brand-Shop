@@ -12,7 +12,7 @@ const MycartProduct = ({ product }) => {
       .then((data) => console.log(data));
   };
   return (
-    <div className="flex h-[200px] bg-white p-1 rounded-xl gap-2">
+    <div className="flex lg:h-[200px] md:h-[200px] bg-white p-1 rounded-xl gap-2">
       <div className="w-[200px]">
         <img src={product.image} className="w-full h-full rounded-xl" alt="" />
       </div>

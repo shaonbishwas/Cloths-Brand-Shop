@@ -81,7 +81,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <h1 className=" text-xl font-extrabold"><span className="b text-2xl font-extrabold">M</span>y <span className="m text-2xl font-extrabold">B</span>rand</h1>
+        <h1 className=" text-xl font-extrabold"><span className="b text-xl lg:text-2xl font-extrabold">M</span>y <span className="m text-xl lg:text-2xl font-extrabold">B</span>rand</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
@@ -90,8 +90,8 @@ const Navbar = () => {
         {user ? (
           <div className="flex gap-2 h-12 items-center">
             <div className="text-sm">
-              <p>{user.displayName || "User Name"}</p>
-              <p>{user.email}</p>
+              <p className="text-right">{user.displayName || "User Name"}</p>
+              <p className="text-xs lg:text-sm">{user.email}</p>
             </div>
             <div className="h-full">
               {user.photoURL ? (

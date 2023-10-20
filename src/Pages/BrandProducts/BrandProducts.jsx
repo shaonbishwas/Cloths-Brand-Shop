@@ -18,7 +18,7 @@ const BrandProducts = () => {
   // console.log(name, brand)
   if (products.length > 0) {
     return (
-      <div className="w-4/5 mx-auto">
+      <div className="lg:w-4/5 mx-auto">
         {/* --------------------carusal----------------------------------- */}
         <div className="carousel w-full h-[80vh]">
           <div id="slide1" className="carousel-item relative w-full">
@@ -68,7 +68,7 @@ const BrandProducts = () => {
         </div>
 
         {/*-------------------- products of selected brand -----------------------*/}
-        <div className="grid grid-cols-3 my-20 gap-5">
+        <div className="grid w-4/5 mx-auto lg:grid-cols-3 md:grid-cols-2 my-20 gap-5">
           {products.map((product) => (
             <Product key={product._id} product={product}></Product>
           ))}
