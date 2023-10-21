@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    errorElement:<ErrorElement></ErrorElement>,
+    errorElement: <ErrorElement></ErrorElement>,
     children: [
       {
         path: "/",
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             <AddProducts></AddProducts>
           </PrivateRoute>
         ),
-        errorElement:<ErrorElement></ErrorElement>
+        errorElement: <ErrorElement></ErrorElement>,
       },
       {
         path: "/mycart",
@@ -42,26 +42,24 @@ const router = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
-        errorElement:<ErrorElement></ErrorElement>,
+        errorElement: <ErrorElement></ErrorElement>,
         loader: () =>
-          fetch(
-            "https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/mycart"
-          ),
+          fetch("https://fashion-and-apparel-server-wine.vercel.app/mycart"),
       },
       {
         path: "/login",
         element: <Login></Login>,
-        errorElement:<ErrorElement></ErrorElement>
+        errorElement: <ErrorElement></ErrorElement>,
       },
       {
         path: "/register",
         element: <Register></Register>,
-        errorElement:<ErrorElement></ErrorElement>
+        errorElement: <ErrorElement></ErrorElement>,
       },
       {
         path: "/brandproducts/:name",
         element: <BrandProducts></BrandProducts>,
-        errorElement:<ErrorElement></ErrorElement>,
+        errorElement: <ErrorElement></ErrorElement>,
         loader: () => fetch("/brand.json"),
       },
       {
@@ -71,10 +69,10 @@ const router = createBrowserRouter([
             <ProductDetails></ProductDetails>
           </PrivateRoute>
         ),
-        errorElement:<ErrorElement></ErrorElement>,
+        errorElement: <ErrorElement></ErrorElement>,
         loader: ({ params }) =>
           fetch(
-            `https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/productdetails/${params.id}`
+            `https://fashion-and-apparel-server-wine.vercel.app/productdetails/${params.id}`
           ),
       },
       {
@@ -84,10 +82,10 @@ const router = createBrowserRouter([
             <Update></Update>
           </PrivateRoute>
         ),
-        errorElement:<ErrorElement></ErrorElement>,
+        errorElement: <ErrorElement></ErrorElement>,
         loader: ({ params }) =>
           fetch(
-            `https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/productdetails/${params.id}`
+            `https://fashion-and-apparel-server-wine.vercel.app/productdetails/${params.id}`
           ),
       },
     ],

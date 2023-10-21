@@ -7,9 +7,7 @@ import { Outlet } from "react-router-dom";
 function App() {
   const [products, setProducts] = useState();
   useEffect(() => {
-    fetch(
-      "https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/products"
-    )
+    fetch("https://fashion-and-apparel-server-wine.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

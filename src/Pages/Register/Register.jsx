@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import './register.css'
 import { AuthContext } from "../../authProvider/AuthProvider";
+import { ToastContainer } from "react-toastify";
 
 const Register = () => {
   const { createUser, notify, setRerror, rerror, setLoading } =
@@ -35,6 +36,7 @@ const Register = () => {
   };
   return (
     <>
+    <ToastContainer></ToastContainer>
       <div className="hero min-h-screen bg-base-200 text-white">
         <div className="hero-content flex-col lg:flex-row-reverse lg:w-[30%] ">
           <div className="registerCart card flex-shrink-0 w-full shadow-2xl bg-base-100 h-full">
@@ -48,7 +50,7 @@ const Register = () => {
                   placeholder="Name"
                   name="name"
                   className="registerCart input input-bordered"
-                  required
+                  // required
                 />
               </div>
               <div className="form-control">

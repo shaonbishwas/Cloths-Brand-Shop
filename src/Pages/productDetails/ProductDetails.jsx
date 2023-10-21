@@ -9,16 +9,13 @@ const ProductDetails = () => {
     product;
   const { notify } = useContext(AuthContext);
   const handleSubmit = () => {
-    fetch(
-      "https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/addtocart",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(product),
-      }
-    )
+    fetch("https://fashion-and-apparel-server-wine.vercel.app/addtocart", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(product),
+    })
       .then((res) => res.json())
       .then((data) => {
         if (data.acknowledged === true) {

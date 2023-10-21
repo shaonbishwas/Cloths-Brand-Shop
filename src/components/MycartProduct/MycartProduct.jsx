@@ -3,13 +3,17 @@ import PropTypes from "prop-types";
 const MycartProduct = ({ product }) => {
   const handleDelete = () => {
     fetch(
-      `https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/delete/${product._id}`,
+      `https://fashion-and-apparel-server-wine.vercel.app/delete/${product._id}`,
       {
         method: "DELETE",
       }
     )
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        if (data.acknowledged === true) {
+          window.location.reload();
+        }
+      });
   };
   return (
     <div className="flex lg:h-[200px] md:h-[200px] bg-white p-1 rounded-xl gap-2">

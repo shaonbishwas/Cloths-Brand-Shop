@@ -13,7 +13,7 @@ const Update = () => {
     const type = form.type.value;
     const updatedProduct = { name, brand, rating, image, price, type };
     fetch(
-      `https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/update/${product._id}`,
+      `https://fashion-and-apparel-server-wine.vercel.app/update/${product._id}`,
       {
         method: "PUT",
         headers: {

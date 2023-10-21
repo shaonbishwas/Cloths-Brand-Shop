@@ -9,7 +9,7 @@ const BrandProducts = () => {
   const brand = brands.find((b) => b.name === name);
   useEffect(() => {
     fetch(
-      `https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/products/${brand.name}`
+      `https://fashion-and-apparel-server-wine.vercel.app/products/${brand.name}`
     )
       .then((res) => res.json())
       .then((data) => setProducts(data));

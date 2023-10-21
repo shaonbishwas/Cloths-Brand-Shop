@@ -19,16 +19,13 @@ const AddProducts = () => {
       short_description,
     };
     console.log(addProduct);
-    fetch(
-      "https://fashion-and-apparel-server-6jdtzxnqu-shaon-bishwas-projects.vercel.app/addProduct",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(addProduct),
-      }
-    )
+    fetch("https://fashion-and-apparel-server-wine.vercel.app/addProduct", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(addProduct),
+    })
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
