@@ -4,8 +4,47 @@ import heroImg from "./image/heroimg.jpg";
 import { FaDiscord } from "react-icons/fa6";
 import { AiFillInstagram, AiFillYoutube, AiFillLinkedin } from "react-icons/ai";
 import "./Home.css";
+// import { useEffect, useState } from "react";
 const Home = () => {
   const brands = useLoaderData();
+  // const [latitude, setLatitude] = useState(null);
+  // const [longitude, setLongitude] = useState(null);
+  // // location testing
+  // useEffect(() => {
+  //   if ("geolocation" in navigator) {
+  //     const watchId = navigator.geolocation.watchPosition(
+  //       function (position) {
+  //         console.log("Latitude: " + position.coords.latitude);
+  //         console.log("Longitude: " + position.coords.longitude);
+  //         setLatitude(position.coords.latitude);
+  //         setLongitude(position.coords.longitude);
+  //       },
+  //       function (error) {
+  //         console.error("Error getting location: " + error.message);
+  //       },
+  //       {
+  //         enableHighAccuracy: true,
+  //         timeout: 5000,
+  //         maximumAge: 0,
+  //       }
+  //     );
+  //     return () => {
+  //       navigator.geolocation.clearWatch(watchId);
+  //     };
+  //   } else {
+  //     console.error("Geolocation is not supported by your browser");
+  //   }
+  // }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/location", {
+  //     method: "POST",
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //     body: JSON.stringify({ latitude, longitude }),
+  //   });
+  // }, [latitude, longitude]);
+
   return (
     <div>
       <div className="flex lg:flex-row my-10 flex-col gap-10 lg:gap-0 ">
@@ -25,12 +64,13 @@ const Home = () => {
           </div>
         </div>
         <div className="lg:w-2/5 h-[60vh] ">
-          <img className="w-[90%] md:w-[70%] mx-auto  lg:w-[65%] rounded-full h-full" src={heroImg} alt="" />
+          <img
+            className="w-[90%] md:w-[70%] mx-auto  lg:w-[65%] rounded-full h-full"
+            src={heroImg}
+            alt=""
+          />
         </div>
       </div>
-
-
-
 
       <div className="text-white text-center flex justify-center my-10 text-5xl font-bold">
         <h1 className="">Our Trusted Brands</h1>
@@ -41,11 +81,13 @@ const Home = () => {
         ))}
       </div>
       <div className="text-center text-white mt-20 w-4/5 mx-auto leading-loose py-10">
-        <h1 className="text-4xl font-bold space-y-5">
-          CREATE YOUR OWN BRAND
-        </h1>
+        <h1 className="text-4xl font-bold space-y-5">CREATE YOUR OWN BRAND</h1>
         <p>
-        Many people start a Brand to make money from a passion. Centering a Brand around something you love can make you excited to work every day and eager to overcome challenges. Credibility: Starting a Brand can help you build credibility and establish yourself as an expert in your industry
+          Many people start a Brand to make money from a passion. Centering a
+          Brand around something you love can make you excited to work every day
+          and eager to overcome challenges. Credibility: Starting a Brand can
+          help you build credibility and establish yourself as an expert in your
+          industry
         </p>
         <button className="py-2 px-4 rounded-full text-white font-semibold mt-3 button">
           Learn More
